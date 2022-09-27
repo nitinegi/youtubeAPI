@@ -1,0 +1,25 @@
+{
+  "name": "onboarding-project",
+  "version": "1.0.0",
+  "description": "youtube API project using node and mongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "",
+    "start": "node server.js"
+  },
+  "author": "Nitin Negi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "express-rate-limit": "^6.6.0",
+    "mongodb": "^4.9.1",
+    "mongoose": "^6.6.0",
+    "node-cron": "^3.0.2",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "body-parser": "^1.20.0",
+    "nodemon": "^2.0.19"
+  }
+}
