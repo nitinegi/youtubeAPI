@@ -38,9 +38,9 @@ app.get('/search', limiter, async(req, res) => {
             data: data
         });
     } catch(err) {
+        console.log("\nerror: ", err);
         res.status(500).send({
             status: "search failure",
-            err: err
         });
     }
 });
@@ -68,9 +68,9 @@ app.get("/videos", async(req, res) => {
         });
         console.log("data fetched");
     } catch (err) {
+        console.log("\nerror:", err);
         res.status(500).send({
             status: "pagination failure",
-            err: err
         });
     }
 });

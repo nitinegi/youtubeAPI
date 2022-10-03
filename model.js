@@ -31,6 +31,10 @@ schema.index({
     description: "text",
 });
 
+schema.index({
+    publishedAt: -1,
+});
+
 const mySchema = mongoose.model('youtubeVideos', schema);
 
 module.exports.mySchema = mySchema;
